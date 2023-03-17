@@ -19,6 +19,16 @@ pipeline {
                 }
             }
         }
+        stage('smoke-test') {
+             steps {
+                 sh 'echo "Fail!"; exit 1'
+             }
+         }
+        stage('Cleanup') {
+             steps {
+                 sh rm -rf /tmp/*
+             }
+         }
     }
         post {
              always {

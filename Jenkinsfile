@@ -26,7 +26,7 @@ pipeline {
          }
         stage('Cleanup') {
              steps {
-                 sh rm -rf /tmp/*
+                 sh 'rm -rf /tmp/*'
              }
          }
     }

@@ -6,12 +6,6 @@ pipeline {
                 sh 'tidy -q -e *.html'
             }
         }
-        stage('install') {
-            steps {
-                // 'ci' install node modules
-                sh 'npm ci'
-            }
-        }
         stage('Unit Test') {
              steps {
                  sh 'echo "Fail!"; exit 1'

@@ -1,2 +1,2 @@
 GitHub repository :https://github.com/Sourabhverma/cloudops-jenkins
-S3 Bucket :
+S3 Bucket : http://jenkins-project-final.s3-website-us-west-2.amazonaws.com

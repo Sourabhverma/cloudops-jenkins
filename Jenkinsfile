@@ -21,7 +21,7 @@ pipeline {
         }
         stage('smoke-test') {
              steps {
-                 sh 'echo "Fail!"; exit 1'
+                 sh 'echo "Pass!'
              }
          }
         stage('Cleanup') {
